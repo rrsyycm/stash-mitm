@@ -1,4 +1,4 @@
 (() => {
-    console.log("Dada-脚本启动", $request && $request.url);
+    console.log("Dada-脚本启动2", $response && $request.url);
     $done({});
 })();
