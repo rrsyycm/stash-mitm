@@ -1,18 +1,17 @@
 #!desc=达达过滤
 #!author=dada
-name: dadaguolu
-desc: 达达过滤
 http:
-  mitm:
-    - "delivery-api.imdada.cn"
-    - "xyz.imdada.cn"
   script:
     - match: .*randomAvailableNearList.*
-      name: dadaguolv
-      type: response
+      name: your-fancy-script
+      type: response # request / response
       require-body: true
-      timeout: 10
+      timeout: 20
+      argument: ''
+      binary-mode: false
+      max-size: 1048576 # 1MB
+
 script-providers:
-  dadaguolv:
+  your-fancy-script:
     url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js
     interval: 86400
