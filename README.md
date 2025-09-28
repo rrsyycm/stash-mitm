@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada1.stoverride
+https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada2.stoverride

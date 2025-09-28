@@ -1,0 +1,27 @@
+name: '📺 BiliBili: 🔀 Redirect'
+desc: |-
+  哔哩哔哩：重定向
+  中国站CDN自定义
+openUrl: 'http://boxjs.com/#/app/BiliBili.Redirect'
+author: |-
+  VirgilClyne[https://github.com/VirgilClyne]
+homepage: 'https://Redirect.BiliUniverse.io'
+icon: 'https://github.com/BiliUniverse/Redirect/raw/main/src/assets/icon_rounded.png'
+category: '🪐 BiliUniverse'
+date: '2024-12-10 07:13:21'
+version: '0.2.12'
+http:
+  script:
+    - match: ^https?:\/\/.+\.imdada\.cn\/
+      name: your-fancy-script
+      type: response # request / response
+      require-body: true
+      timeout: 20
+      argument: ''
+      binary-mode: false
+      max-size: 1048576 # 1MB
+
+script-providers:
+  your-fancy-script:
+    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada2.js
+    interval: 86400
