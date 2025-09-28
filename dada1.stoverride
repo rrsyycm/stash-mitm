@@ -5,8 +5,9 @@ desc: 达达过滤
 http:
   mitm:
     - "delivery-api.imdada.cn"
+    - "xyz.imdada.cn"
   script:
-    - match: ^https:\/\/delivery-api\.imdada\.cn\/v6_0\/task\/randomAvailableNearList(\?.*)?$
+    - match: .*randomAvailableNearList.*
       name: dadaguolv
       type: response
       require-body: true
