@@ -16,5 +16,5 @@ http:
       timeout: 10
 script-providers:
   dadaguolv:
-    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/dada.js
+    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js
     interval: 86400
