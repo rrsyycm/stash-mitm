@@ -8,7 +8,6 @@ http:
   mitm:
     - "delivery-api.imdada.cn"
   script:
-    - match: ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index)
     - match: ^https:\/\/delivery-api\.imdada\.cn\/v6_0\/task\/randomAvailableNearList(\?.*)?$
       name: dadaguolv
       type: response
