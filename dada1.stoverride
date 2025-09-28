@@ -1,0 +1,19 @@
+#!desc=达达过滤
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/amj.png
+#!homepage=https://whatshub.top
+#!author=dada
+name: dadaguolu
+desc: 达达过滤
+http:
+  mitm:
+    - "delivery-api.imdada.cn"
+  script:
+    - match: ^https:\/\/delivery-api\.imdada\.cn\/v6_0\/task\/randomAvailableNearList(\?.*)?$
+      name: dadaguolv
+      type: response
+      require-body: true
+      timeout: 10
+script-providers:
+  dadaguolv:
+    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js
+    interval: 86400
