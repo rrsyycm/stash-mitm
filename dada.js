@@ -4,6 +4,7 @@
     let obj = JSON.parse(body);        // 转为对象
 
 // === 在这里修改数据 ===
+    obj.content.asize = 1
     obj.content.order = [{
         "earnings": "5.93",
         "totalEarnings": "5.93",
@@ -168,6 +169,5 @@
         "voice_delivery_accept_output": null
     }]
 
-// 返回修改后的数据
     $done({body: JSON.stringify(obj)});
 })();
