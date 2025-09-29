@@ -5,7 +5,7 @@ openUrl: 'http://boxjs.com/#/app/BiliBili.Redirect'
 homepage: 'https://jd.cn'
 icon: 'https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/jd.png'
 category: 'JD'
-version: '0.0.0'
+version: '0.0.1'
 http:
   mitm:
     - '*.imdada.cn'
