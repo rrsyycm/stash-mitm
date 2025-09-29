@@ -20,5 +20,5 @@ http:
 
 script-providers:
   dada:
-    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js
+    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js?t=1648212800
     interval: 86400
