@@ -5,7 +5,7 @@ openUrl: 'http://boxjs.com/#/app/BiliBili.Redirect'
 homepage: 'https://jd.cn'
 icon: 'https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/jd.png'
 category: 'JD'
-version: '0.0.1'
+version: '0.0.2'
 http:
   mitm:
     - '*.imdada.cn'
@@ -20,5 +20,5 @@ http:
 
 script-providers:
   dada:
-    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js?t=1648212800
+    url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js?t=1649212800
     interval: 86400
