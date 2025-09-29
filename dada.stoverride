@@ -1,19 +1,24 @@
-#!desc=达达过滤
-#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/amj.png
-#!homepage=https://whatshub.top
-#!author=dada
-name: dadaguolu
-desc: 达达过滤
+name: '达达信息过滤'
+desc: |-
+  达达信息过滤
+openUrl: 'http://boxjs.com/#/app/BiliBili.Redirect'
+homepage: 'https://jd.cn'
+icon: 'https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/jd.png'
+category: 'JD'
+version: '0.0.0'
 http:
   mitm:
-    - "delivery-api.imdada.cn"
+    - '*.imdada.cn'
   script:
-    - match: ^https:\/\/delivery-api\.imdada\.cn\/v6_0\/task\/randomAvailableNearList(\?.*)?$
-      name: dadaguolv
+    - match: ^https?:\/\/.+\.imdada\.cn\/
+      name: dada
       type: response
       require-body: true
-      timeout: 10
+      timeout: 20
+      argument: ''
+      binary-mode: false
+
 script-providers:
-  dadaguolv:
+  dada:
     url: https://raw.githubusercontent.com/rrsyycm/stash-mitm/refs/heads/main/dada.js
     interval: 86400
